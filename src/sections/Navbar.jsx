@@ -9,7 +9,7 @@ const Navbar = () => {
             sm:py-0">
                 <a className = "text-xl font-bold transition-colors
                 text-neutral-400 hover:text-white">
-                    Leon
+                    Under Maintenance!
                     </a> 
                 </div>
             </div>
