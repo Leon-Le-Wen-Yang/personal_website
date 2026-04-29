@@ -1,6 +1,7 @@
 import {useRef} from "react";
 import Card from "../components/Card.jsx";
 import { Globe } from "../components/globe";
+import CopyEmailButton from "../components/CopyEmailButton";
 
 const About = () => {
     const grid2Container = useRef();
@@ -76,22 +77,30 @@ const About = () => {
         </div>
         
         {/* Grid 3 */}
-<div className="grid-black-color grid-3 relative overflow-hidden">
-  <div className="z-10 w-[50%]">
-    <p className="headtext">Time Zone</p>
-    <p className="subtext">
-      I’m based in Markham, Ontario, and open to remote work
-      or relocating anywhere in Canada.
-    </p>
-  </div>
+        <div className="grid-black-color grid-3 relative overflow-hidden">
+          <div className="z-10 w-[50%]">
+            <p className="headtext">Time Zone</p>
+            <p className="subtext">
+              I’m based in Markham, Ontario, and open to remote work
+              or relocating anywhere in Canada.
+            </p>
+          </div>
 
-  <figure className="absolute right-[-6rem] bottom-[-7rem] w-[24rem] h-[24rem]">
-    <Globe className="w-full h-full" />
-  </figure>
-</div>
+          <figure className="absolute right-[-6rem] bottom-[-7rem] w-[24rem] h-[24rem]">
+            <Globe className="w-full h-full" />
+          </figure>
+        </div>
 
         {/* Grid 4 */}
-        <div className="grid-special-color grid-4"></div>
+        <div className="grid-special-color grid-4">
+          <div className="flex flex-col items-center
+          justify-center gap-4 size-full">
+            <p className="text-center headtext">
+              Have an Idea? Let's Connect!
+              <CopyEmailButton />
+            </p>
+          </div>
+        </div>
 
         {/* Grid 5 */}
         <div className="grid-default-color grid-5"></div>
