@@ -74,38 +74,21 @@ const About = () => {
             />
             </div>
         </div>
-
+        
         {/* Grid 3 */}
-        {/*
-      <div className="grid-black-color grid-3 relative">
-        <div className="relative z-10 w-[48%] p-6">
-          <p className="headtext">Time Zone</p>
-          <p className="subtext">
-            I’m based in Markham, Ontario, and open to remote work
-            or relocating anywhere in Canada.
-          </p>
-        </div>
+<div className="grid-black-color grid-3 relative overflow-hidden">
+  <div className="z-10 w-[50%]">
+    <p className="headtext">Time Zone</p>
+    <p className="subtext">
+      I’m based in Markham, Ontario, and open to remote work
+      or relocating anywhere in Canada.
+    </p>
+  </div>
 
-        <div className="absolute right-4 top-4 w-[14rem] h-[14rem] md:w-[18rem] md:h-[18rem] overflow-hidden">
-          <Globe className="w-full h-full" />
-        </div>
-      </div>
-      */}
-
-      {/* Grid 3 */}
-      <div className="grid-black-color grid-3 relative">
-        <div className="relative z-10 w-[48%] p-6">
-          <p className="headtext">Time Zone</p>
-          <p className="subtext">
-            I’m based in Markham, Ontario, and open to remote work
-            or relocating anywhere in Canada.
-          </p>
-        </div>
-
-        <div className="absolute right-4 top-4 w-[14rem] h-[14rem] md:w-[18rem] md:h-[18rem]">
-          <Globe className="w-full h-full" />
-        </div>
-      </div>
+  <figure className="absolute right-[-6rem] bottom-[-7rem] w-[24rem] h-[24rem]">
+    <Globe className="w-full h-full" />
+  </figure>
+</div>
 
         {/* Grid 4 */}
         <div className="grid-special-color grid-4"></div>
