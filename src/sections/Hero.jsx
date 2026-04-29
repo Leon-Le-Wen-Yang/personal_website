@@ -40,8 +40,8 @@ function Rig() {
     return useFrame((state, delta) => {
         easing.damp3(
             state.camera.position,
-            [state.mouse.x / 5, 1 + state.mouse.y / 5, 3],
-            1,
+            [state.mouse.x / 3, 1 + state.mouse.y / 3, 3],
+            1.5,
             delta
         );
     });
