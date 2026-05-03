@@ -1,7 +1,8 @@
 import {useRef} from "react";
 import Card from "../components/Card.jsx";
-import { Globe } from "../components/globe";
+import {Globe} from "../components/globe";
 import CopyEmailButton from "../components/CopyEmailButton";
+import {Frameworks} from "../components/Frameworks.jsx";
 
 const About = () => {
     const grid2Container = useRef();
@@ -60,7 +61,7 @@ const About = () => {
             />
             <Card
               style={{ rotate: "30deg", top: "70%", left: "70%" }}
-              image={`${import.meta.env.BASE_URL}assets/logos/python.png`}
+              image={`${import.meta.env.BASE_URL}assets/logos/python.svg`}
               containerRef={grid2Container}
             />
             <Card
@@ -103,7 +104,18 @@ const About = () => {
         </div>
 
         {/* Grid 5 */}
-        <div className="grid-default-color grid-5"></div>
+        <div className="grid-default-color grid-5">
+          <div className="z-10 w-[50%]">
+            <p className="headtext">Technical Toolkit</p>
+            <p className="subtext">I use business, data, design, and technical tools 
+              to make sense of complex problems, organize information, and turn ideas 
+              into practical solutions.
+            </p>
+          </div>
+          <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
+            <Frameworks />
+          </div>
+        </div>
       </div>
     </section>
   );
