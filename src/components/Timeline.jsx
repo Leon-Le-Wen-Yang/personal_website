@@ -1,6 +1,7 @@
 "use client";
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
+import { Particles } from "./Particles";
 
 export const Timeline = ({ data }) => {
   const ref = useRef(null);
@@ -23,7 +24,14 @@ export const Timeline = ({ data }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div className="c-space section-spacing" ref={containerRef}>
+    <div id="work" className="relative c-space section-spacing" ref={containerRef}>
+      <Particles
+        className="absolute inset-0 -z-50"
+        quantity={100}
+        ease={80}
+        color={"#ffffff"}
+        refresh
+      />
       <h2 className="text-heading">My Work Experience</h2>
       <div ref={ref} className="relative pb-20">
         {data.map((item, index) => (
